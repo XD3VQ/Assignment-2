@@ -1,0 +1,217 @@
+#hometext {
+    color: rgb(0, 50, 50);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    font-size: larger;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 250, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    size: 100%;
+}
+
+nav {
+    background-color: rgb(210, 250, 240);
+    height: 110px;
+    min-width: 100%;   
+    border: 5px rgb(180, 233, 217);
+    border-bottom-style: solid;
+    min-height: 105px;
+    display: flex;
+    align-self: flex-start;
+}
+
+#treesih {
+    display: flex;
+    border: 3px rgb(10, 94, 61);
+    border-style: inset;
+    margin: 10px;
+    position: relative;
+}
+
+a {
+    background: linear-gradient(to bottom, rgb(50,250,200) 0%, rgb(200,255,200) 100%);
+    height:40px;
+    width: 70px;
+    position: relative;
+    margin: 20px 3vw 0px 3vw;
+    padding: 5px;
+    border: 5px rgb(109, 194, 175);
+    border-style: groove;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.linktext {
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+}
+
+.maintext {
+    margin-right: 40px;
+}
+
+#ringtext, #leavestext {
+    margin: 50px;   
+}
+
+figure {
+    margin: 50px;
+    max-width: 200px;
+}
+
+.ringpics {
+    margin-bottom: 20px;
+    border-style: solid;
+}
+
+.container {
+    position: relative;
+    width: 70%;
+    min-width: 300px;
+    height: 100%;
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10%;
+}
+
+.container div {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: 4px rgb(8, 78, 124);
+    border-style: solid;
+    width: 50%;
+    min-width: 100px;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    align-self: center;
+    justify-self: center;
+    margin: 30px;
+}
+
+.container p {
+
+    position: relative;
+    color: rgb(0, 50, 120);
+    background-color: rgba(85, 173, 224, 0.4);
+    height: 20%;
+    padding: 0px;;
+    text-align: center;
+    align-content: center;
+    margin: 0px;
+}
+
+.container .season {
+
+    position: absolute;
+    background-color: rgba(15, 55, 56, 0.8);
+    color: aliceblue;
+    border: 2px rgb(252, 252, 252);
+    border-style: dashed;
+    height: 10%;
+    width: 20%;
+    min-width: 50px;
+    min-height: 20px;
+    text-align: center;
+    justify-self: end;
+    top: 2px;
+    right: 2px;
+}
+
+.container .edibility {
+
+    display: inline;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    min-width: 20px;
+    min-height: 20px;
+    border: 1px;
+    border-style: dashed;
+    right: 70px;
+    top: 3px;
+}
+
+table {
+    position: relative;
+    border: 3px rgb(8, 78, 124);
+    border-style: dashed;
+    grid-area: legend;
+    width: 70%;
+    max-width: 600px;
+    aspect-ratio: 3/1;
+    align-self: center;
+    margin: 20px;
+    background-color: lightsteelblue;
+}
+
+th {
+    background-color: aliceblue;
+    width:40%;
+}
+
+td {
+    border: 2px rgb(8, 78, 124);
+    border-style: solid;
+    text-align: center;
+    background-color: white;
+}
+
+#legendseason {
+    color: white;
+    background-color: rgba(15, 55, 56, 0.8);
+}
+
+footer {
+    position: relative;
+    background-color: rgb(190, 230, 230);
+    min-height: 300px;
+    height: 10%;
+    min-width: 100%;
+    margin: auto;
+    display: flex;
+    align-self: flex-start;
+}
+
+footer a {
+    background: azure;
+    border: 4px black;
+    border-style: solid;
+    height: fit-content;
+    width: fit-content;
+    margin: 0px;
+}
+
+footer #externallink {
+    margin: 20px;
+}
+
+form {
+    margin: 20px;
+    display: flex;
+    justify-self: end;
+    justify-content: end;
+    float:end;
+}
+
+form #part1{
+    margin-right: 20px;
+}
+
+form #part2 {
+    min-width: 90px;
+}
+
+form #message {
+    display: flex;
+}
