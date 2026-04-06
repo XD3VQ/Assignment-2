@@ -1,8 +1,10 @@
 #hometext {
     color: rgb(0, 50, 50);
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 300px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: larger;
 }
 
@@ -17,14 +19,14 @@ body {
 }
 
 nav {
-    background-color: rgb(210, 250, 240);
-    height: 110px;
-    min-width: 100%;   
-    border: 5px rgb(180, 233, 217);
-    border-bottom-style: solid;
-    min-height: 105px;
+    background-color: rgb(210, 250, 240); 
+    border-bottom: 5px rgb(180, 233, 217);
     display: flex;
-    align-self: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
 }
 
 #treesih {
@@ -37,16 +39,15 @@ nav {
 
 a {
     background: linear-gradient(to bottom, rgb(50,250,200) 0%, rgb(200,255,200) 100%);
-    height:40px;
-    width: 70px;
     position: relative;
-    margin: 20px 3vw 0px 3vw;
-    padding: 5px;
-    border: 5px rgb(109, 194, 175);
-    border-style: groove;
+    margin: 0px;
+    padding: 0.5rem 0.75rem;
+    border: 5px groove rgb(109, 194, 175);
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    min-height: 44px;
 
 }
 
@@ -57,7 +58,8 @@ a {
 }
 
 .maintext {
-    margin-right: 40px;
+    margin: 0 1rem 0 0;
+    text-align: left;
 }
 
 #ringtext, #leavestext {
@@ -147,19 +149,21 @@ figure {
 table {
     position: relative;
     border: 3px rgb(8, 78, 124);
-    border-style: dashed;
-    grid-area: legend;
-    width: 70%;
+    width: 90%;
     max-width: 600px;
-    aspect-ratio: 3/1;
     align-self: center;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: lightsteelblue;
+    border-collapse: collapse;
 }
 
 th {
     background-color: aliceblue;
     width:40%;
+    border: 2px solid rgb(8, 78, 124);
 }
 
 td {
@@ -177,12 +181,12 @@ td {
 footer {
     position: relative;
     background-color: rgb(190, 230, 230);
-    min-height: 300px;
-    height: 10%;
-    min-width: 100%;
-    margin: auto;
+    padding: 20px;
+    margin: 0;
     display: flex;
-    align-self: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
 }
 
 footer a {
@@ -199,39 +203,88 @@ footer #externallink {
 }
 
 form {
-    margin: 20px;
+    margin: 0;
     display: flex;
-    justify-self: end;
-    justify-content: end;
-    float:end;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
 }
 
 form #part1{
-    margin-right: 20px;
+    margin-right: 0;
+    min-width: 260px;
 }
 
 form #part2 {
-    min-width: 90px;
+    min-width: 160px;
 }
 
 form #message {
     display: flex;
 }
-@media screen and (min-width: 590px) {
+@media (min-width: 590px) {
+    nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+    .maintext {
+        margin: 0 1rem 0 0;
+        text-align: left;
+    }
+
+    a {
+        width: 120px;
+        max-width: none;
+    }
     .container {
         grid-template-columns: 1fr 1fr;
     }
+    footer {
+        flex-direction: column;
+    }
+
+    form {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
-@media screen and (min-width: 790px) {
+@media (min-width: 790px) {
     nav,
     #hometext,
     #ringtext,
     #leavestext,
     table,
     .container,
-    footer {
-        width: 790px;
-        margin-left: auto;
-        margin-right: auto;
+    nav{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0.5rem;
     }
+    a {
+        width: 75px;
+        min-height: 40px;
+        padding: 0.4rem 0.5rem;
+    }
+    .maintext {
+        margin: 0 0.25rem 0 0;
+        text-align: left;
+    }
+    footer {
+        font-size: 1.1rem;
+    }
+
+    form {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    form #message {
+        width: 100%;
+        max-width: 320px;
+    }
+    
 }
