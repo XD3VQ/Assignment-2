@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Leaves - Identity of Trees</title>
+    </head>
+    <body>
+        <nav id="top">
+            <img id="treesih" src="images/treesih.jpg" width="75" height="75" alt="Icon of a Tree">
+                <h1>Identity <br> of Trees</h1>
+
+            <a href="homePage.html">
+                <p class="linktext">Home</p>
+            </a>
+
+            <a href="ringsPage.html">
+                <p class="linktext">Rings</p> 
+            </a>
+
+            <a href="leavesPage.html">
+                <p class="linktext">Leaves</p>
+            </a>
+
+            <a href="#part1">
+                <p class="linktext">Contact</p>
+            </a>
+        </nav>
+
+        <div id="leavestext">
+            <h2>The Leaf</h2>
+            <ul>
+                <li>The part that undergoes (the most obvious) life and death cycle, between calender seasons.</li>
+                <li>Serves as a way for a tree to absorb sunlight, more specifically vits and mins. 
+                    <ul><li>Other unique purposes include weather protection, deterring insects, and the spreading of seeds.</li></ul>
+                </li>
+                <li>Depending on its type, a leaf can be suitable for human consumption and potentially beneficial for health. Same goes for consumption by a multitude of insects and animals alike.</li>
+            </ul>
+        </div>
+        <table>
+            <tr><th colspan="3">Legend</th></tr>
+            <tr><td>Icon</td><td>Meaning</td></tr>
+            <tr><td id="legendseason">R S F W</td><td>Spring, Summer, Fall, Winter</td></tr>
+            <tr><td><img src="images/edibility.jpg" width="40px" alt="Legend Symbol for Edibility"></td><td>Edibile</td></tr>
+        </table>
+        <div class="container">
+            <div><img src="images/pine.jpg" width="100%" height="100%" alt="Pine Branch">
+                <img class="edibility" src="images/edibility.jpg" alt="Symbol for Edibility">
+                <p class="season"><b>RSFW</b></p>
+                <p class="leafnameslab"><b>Pine</b></p>
+            </div>
+
+            <div><img src="images/banana.jpg" width="100%" height="100%" alt="Banana Leaves">
+                <img class="edibility" src="images/edibility.jpg" alt="Symbol for Edibility">
+                <p class="season"><b>RS</b></p>
+                <p class="leafnameslab"><b>Banana</b></p>
+            </div>
+
+            <div><img src="images/maple.jpg" width="100%" height="100%" alt="Maple Branch">
+                <img class="edibility" src="images/edibility.jpg" alt="Symbol for Edibility">
+                <p class="season"><b>RSF</b></p>
+                <p class="leafnameslab"><b>Maple</b></p>
+            </div>
+
+            <div><img src="images/mimosa.jpg" width="100%" height="100%" alt="Mimosa Pudica Plant">
+                <p class="season"><b>RS</b></p>
+                <p class="leafnameslab"><b>Mimosa Pudica</b></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="externallink">
+            <p>Wikipedia page for <i>"Tree": </i></p><a href="https://en.wikipedia.org/wiki/Tree">https://en.wikipedia.org/wiki/Tree</a>
+        </div>
+        <form>
+            <div id="part1">
+                <p>Use this form to contact me: </p>
+                <label for="firstname">First name: </label><input id="firstname" type="text" autofocus><br>
+                <label for="lastname">Last name: </label><input id="lastname" type="text"><br>
+                <label for="phonenumber">Phone Number: </label><input id="phonenumber" type="text" placeholder="123-456-7890" pattern=“[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}”><br>
+                <label for="email">Email: </label><input id="email" type="email" placeholder="email@address.domain"><br>
+                <label for="subject">Subject: </label><input id="subject" type="text"><br><br>
+                <label for="message">Message: </label><textarea id="message" name="message" rows="7" cols="40"></textarea>
+            </div>
+            <div id="part2">
+                <p><b>Subject Type</b></p>
+                <label for="question">Question </label><input id="question" name="subjecttype" type="radio">
+                <label for="issue">Issue </label><input id="issue" name="subjecttype" type="radio">
+                <label for="other">Other </label><input id="other" name="subjecttype" type="radio"><br>
+                <p><b>Subject Sub-types</b></p></o>
+                <label for="important">Important </label><input id="important" type="checkbox">
+                <label for="legal">Legal </label><input id="legal" type="checkbox">
+                <label for="personal">Personal </label><input id="personal" type="checkbox"><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <div class="secondarylinks">
+            <a href="homePage.html">Home</a>
+            <a href="ringsPage.html">Rings</a>
+            <a href="leavesPage.html">Leaves</a>
+        </div>
+    </footer>
+</html>

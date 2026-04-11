@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Rings - Identity of Trees</title>
+    </head>
+    <body>
+        <nav id="top">
+            <img id="treesih" src="images/treesih.jpg" width="75" height="75" alt="Icon of a Tree">
+                <h1>Identity <br> of Trees</h1>
+
+            <a href="homePage.html">
+                <p class="linktext">Home</p>
+            </a>
+
+            <a href="ringsPage.html">
+                <p class="linktext">Rings</p> 
+            </a>
+
+            <a href="leavesPage.html">
+                <p class="linktext">Leaves</p>
+            </a>
+
+            <a href="#part1">
+                <p class="linktext">Contact</p>
+            </a>
+        </nav>
+        
+        <div id="ringtext">
+            <h2>Dendrochronology</h2>
+            <h3><i>(dendro - greek: "tree"; chrono(s) - greek: "time")</i></h3>
+            <ul>
+                <li>Rings are formed inside trees, each grown at the edge from the bark. As a tree grows outwards in size, so does its rings at a periodic rate,
+                    <br> giving the tree a multi-ringed appearance when looked at vertically through.</li>
+                <li>One ring represents around one year of growth.
+                    <ul>
+                        <li>This is not guaranteed, as some rings develop too faintly to see and many other natural discrepancies can occur.</li>
+                        <li>The width/size of the ring gradually decreases over the years, at a exponential decay rate.<li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <figure>
+                <img class="ringpics" src="images/tomoeRing.jpg" width="200px" height="200px" alt="Rings in a tree">
+                <figcaption>Top-down ring view</figcaption>
+            </figure>
+            <figure>
+                <img class="ringpics" src="images/growthRate.jpg" width="200px" height="200px" alt="Graph showing decrease of new ring width over time">
+                <figcaption>Exponential Decay of growth vs years</figcaption>
+            </figure>
+        </div>
+    </body>
+    <footer>
+        <div id="externallink">
+            <p>Wikipedia page for <i>"Tree": </i></p><a href="https://en.wikipedia.org/wiki/Tree">https://en.wikipedia.org/wiki/Tree</a>
+        </div>
+        <form>
+            <div id="part1">
+                <p>Use this form to contact me: </p>
+                <label for="firstname">First name: </label><input id="firstname" type="text" autofocus><br>
+                <label for="lastname">Last name: </label><input id="lastname" type="text"><br>
+                <label for="phonenumber">Phone Number: </label><input id="phonenumber" type="text" placeholder="123-456-7890" pattern=“[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}”><br>
+                <label for="email">Email: </label><input id="email" type="email" placeholder="email@address.domain"><br>
+                <label for="subject">Subject: </label><input id="subject" type="text"><br><br>
+                <label for="message">Message: </label><textarea id="message" name="message" rows="7" cols="40"></textarea>
+            </div>
+            <div id="part2">
+                <p><b>Subject Type</b></p>
+                <label for="question">Question </label><input id="question" name="subjecttype" type="radio">
+                <label for="issue">Issue </label><input id="issue" name="subjecttype" type="radio">
+                <label for="other">Other </label><input id="other" name="subjecttype" type="radio"><br>
+                <p><b>Subject Sub-types</b></p></o>
+                <label for="important">Important </label><input id="important" type="checkbox">
+                <label for="legal">Legal </label><input id="legal" type="checkbox">
+                <label for="personal">Personal </label><input id="personal" type="checkbox"><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <div class="secondarylinks">
+            <a href="homePage.html">Home</a>
+            <a href="ringsPage.html">Rings</a>
+            <a href="leavesPage.html">Leaves</a>
+        </div>
+    </footer>
+</html>
